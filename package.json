@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "apisauce": "^1.0.0",
+    "constitute": "^1.6.2",
     "native-base": "^2.8.1",
     "react": "16.5.0",
     "react-mixin-decorator": "^1.2.3",
