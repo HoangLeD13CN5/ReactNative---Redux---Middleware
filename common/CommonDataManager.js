@@ -1,7 +1,7 @@
-import MovieRepos from './MovieRepos';
-import MovieReposImpl from '../reposImpl/MovieReposImpl';
+import MovieRepos from '../presention/repository/MovieRepos';
+import MovieReposImpl from '../data/reposImpl/MovieReposImpl';
 import {Container} from 'constitute';
-
+// DI: repository with class implements this repository
 export class CommonDataManager {
     static myInstance = null;
     /**

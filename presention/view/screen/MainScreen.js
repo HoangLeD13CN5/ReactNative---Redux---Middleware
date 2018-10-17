@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View ,StyleSheet,ListView, Image, TouchableOpacity, RefreshControl } from 'react-native'
 import Dimensions from 'Dimensions'
-import { getData } from '../actions';
+import { getData } from '../../actions';
 import { connect } from 'react-redux';
 
 class MainScreen extends Component {
@@ -38,7 +38,7 @@ class MainScreen extends Component {
                         return (
                             <TouchableOpacity style={styles.container_item}>
                               <Image source={{
-                              uri: rowData.url.medium
+                              uri: rowData.url
                             }} 
                             style={styles.image_item} />
                             </TouchableOpacity>

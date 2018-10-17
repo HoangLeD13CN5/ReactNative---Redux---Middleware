@@ -9,11 +9,10 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
-import MainScreen from './screen/MainScreen';
+import MainScreen from './presention/view/screen/MainScreen';
 import { Provider } from 'react-redux';
-import configureStore from './store';
-import {Container} from 'constitute';
-import {CommonDataManager} from './data/repository';
+import configureStore from './presention/store';
+import {CommonDataManager} from './common/CommonDataManager';
 
 const store = configureStore();
 const StackApp = createStackNavigator({

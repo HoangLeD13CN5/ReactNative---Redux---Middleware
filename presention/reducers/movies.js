@@ -1,12 +1,20 @@
 import * as ActionType from '../actions/type';
 
-const initialState = {
+const initialMovies = {
     movies: [],
     isFetching: false,
     error: false
   }
 
-const moviesReducer = (state = initialState, action) => {
+export class Movie {
+    constructor(name,url,timestamp){
+        this.name = name;
+        this.url = url;
+        this.timestamp = timestamp;
+    }
+}
+
+const moviesReducer = (state = initialMovies, action) => {
     switch (action.type) {
         case ActionType.FETCHING_DATA:
             return {

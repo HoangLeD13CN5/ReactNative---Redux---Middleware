@@ -3,7 +3,7 @@ import { getDataSuccess, getDataFailure } from '../actions';
 import { pipe, from } from 'rxjs';
 import { map, mergeMap } from 'rxjs/operators';
 import { ofType } from 'redux-observable';
-import {getMovieRepos} from '../data/repository';
+import {getMovieRepos} from '../../common/CommonDataManager';
 
 export const loadDataEpic = action$ => {
     return action$.pipe(
